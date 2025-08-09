@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="125.697" tests="10" skipped="0" failures="2" errors="0">
+<testcase classname="User login" name="A newly registered user can login" time="15.26">
+<system-out><![CDATA[
+Given a user open the home page.............................................passed
+And the user makes registration.............................................passed
+And the registration is successful..........................................passed
+When the user enters "new" username and password............................passed
+Then the user logged in successfully........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User login" name="An existing user can login  with or without white spaces in the username and password - #1.1" time="19.137">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#showOverview&quot;}
+  (Session info: chrome=138.0.7204.184)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '11.0.25'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [51ee5b9ebed0a5c033ead4111e3e938f, findElement {using=id, value=showOverview}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: /var/folders/5h/94_nbpws5gq...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56205}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56205/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 51ee5b9ebed0a5c033ead4111e3e938f">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#showOverview"}
+  (Session info: chrome=138.0.7204.184)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '11.0.25'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [51ee5b9ebed0a5c033ead4111e3e938f, findElement {using=id, value=showOverview}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: /var/folders/5h/94_nbpws5gq...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56205}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56205/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 51ee5b9ebed0a5c033ead4111e3e938f
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy23.getText(Unknown Source)
+	at pages.LoginPage.VerifySuccessfulLogin(LoginPage.java:67)
+	at stepdefinitions.LoginStepDefinitions.theUserLoggedInSuccessfully(LoginStepDefinitions.java:35)
+	at ✽.the user logged in successfully(file:///Users/beril/Documents/test_project_ui/src/test/resources/features/Login.feature:13)
+]]>
+</failure>
+<system-out><![CDATA[
+Given a user open the home page.............................................passed
+When the user enters "existing" username and password.......................passed
+Then the user logged in successfully........................................failed
+]]></system-out>
+</testcase>
+<testcase classname="User login" name="An existing user can login  with or without white spaces in the username and password - #1.2" time="18.408">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#showOverview&quot;}
+  (Session info: chrome=138.0.7204.184)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '11.0.25'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [df78938de98402c9084b81c2063670ab, findElement {using=id, value=showOverview}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: /var/folders/5h/94_nbpws5gq...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56301}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56301/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: df78938de98402c9084b81c2063670ab">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#showOverview"}
+  (Session info: chrome=138.0.7204.184)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '11.0.25'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [df78938de98402c9084b81c2063670ab, findElement {using=id, value=showOverview}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: /var/folders/5h/94_nbpws5gq...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56301}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56301/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: df78938de98402c9084b81c2063670ab
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy23.getText(Unknown Source)
+	at pages.LoginPage.VerifySuccessfulLogin(LoginPage.java:67)
+	at stepdefinitions.LoginStepDefinitions.theUserLoggedInSuccessfully(LoginStepDefinitions.java:35)
+	at ✽.the user logged in successfully(file:///Users/beril/Documents/test_project_ui/src/test/resources/features/Login.feature:13)
+]]>
+</failure>
+<system-out><![CDATA[
+Given a user open the home page.............................................passed
+When the user enters "white spaces with" username and password..............passed
+Then the user logged in successfully........................................failed
+]]></system-out>
+</testcase>
+<testcase classname="User login" name="A user cannot login with a wrong username and password or empty credentials - #1.1" time="8.67">
+<system-out><![CDATA[
+Given a user open the home page.............................................passed
+When the user enters "invalid" username and password........................passed
+Then the user is shown "The username and password could not be verified."...passed
+]]></system-out>
+</testcase>
+<testcase classname="User login" name="A user cannot login with a wrong username and password or empty credentials - #1.2" time="8.267">
+<system-out><![CDATA[
+Given a user open the home page.............................................passed
+When the user enters "no" username and password.............................passed
+Then the user is shown "Please enter a username and password."..............passed
+]]></system-out>
+</testcase>
+<testcase classname="User login" name="A user cannot login with a wrong username or wrong password - #1.1" time="8.567">
+<system-out><![CDATA[
+Given a user open the home page.............................................passed
+When the user enters "wrong username".......................................passed
+Then the user is shown "The username and password could not be verified."...passed
+]]></system-out>
+</testcase>
+<testcase classname="User login" name="A user cannot login with a wrong username or wrong password - #1.2" time="9.003">
+<system-out><![CDATA[
+Given a user open the home page.............................................passed
+When the user enters "wrong password".......................................passed
+Then the user is shown "The username and password could not be verified."...passed
+]]></system-out>
+</testcase>
+<testcase classname="User login" name="A registered user can access forgotten login info in customer lookup page" time="15.339">
+<system-out><![CDATA[
+Given a user open the home page.............................................passed
+And the user makes registration.............................................passed
+And the registration is successful..........................................passed
+And the user searches forgotten user credentials "with valid data"..........passed
+When the user enters "saved" username and password..........................passed
+Then the user logged in successfully........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User login" name="A registered user cannot access forgotten login credentials without providing all required info - #1.1" time="12.216">
+<system-out><![CDATA[
+Given a user open the home page.............................................passed
+And the user makes registration.............................................passed
+And the registration is successful..........................................passed
+When the user searches forgotten user credentials "with missing data".......passed
+Then the user is  shown "Social Security Number is required."...............passed
+]]></system-out>
+</testcase>
+<testcase classname="User login" name="A registered user cannot access forgotten login credentials without providing any info" time="10.698">
+<system-out><![CDATA[
+Given a user open the home page.............................................passed
+When the user searches forgotten user credentials without providing any personal info.passed
+Then the user is shown the proper error messages............................passed
+]]></system-out>
+</testcase>
+</testsuite>

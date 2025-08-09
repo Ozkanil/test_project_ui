@@ -1,0 +1,8 @@
+/Users/beril/Documents/test_project_ui/src/test/java/runners/Runner.java
+/Users/beril/Documents/test_project_ui/src/test/java/pages/LoginPage.java
+/Users/beril/Documents/test_project_ui/src/test/java/stepdefinitions/LoginStepDefinitions.java
+/Users/beril/Documents/test_project_ui/src/test/java/utilities/Driver.java
+/Users/beril/Documents/test_project_ui/src/test/java/utilities/ConfigurationReader.java
+/Users/beril/Documents/test_project_ui/src/test/java/pages/RegistrationPage.java
+/Users/beril/Documents/test_project_ui/src/test/java/Contexts/RegistrationContext.java
+/Users/beril/Documents/test_project_ui/src/test/java/stepdefinitions/RegistrationStepDefinitions.java
