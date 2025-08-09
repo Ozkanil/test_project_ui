@@ -1,4 +1,18 @@
 Feature: User login
+ #Scenarios covered:
+ # Positive:
+ # 1) A newly registered user can login
+ # 2) Existing user can login
+ # 3) User can login even after putting white space after username and password
+ # 4) User can view login credentials by entering correct personal info
+
+ # Negative:
+ # 1) User cannot login when wrong username and password are entered
+ # 2) User cannot login when wrong username is entered
+ # 3) User cannot login when wrong password is entered
+ # 4) User cannot login when no username and password is entered
+ # 5) User cannot view username and password when all personal info isn't provided
+ # 6) User cannot view username and password when no personal info is provided
 
   Scenario: A newly registered user can login
     Given a user open the home page
