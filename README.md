@@ -8,13 +8,13 @@ It follows the **Page Object Model (POM)** design pattern and includes **10 test
 
 ## ✅ Features
 - **10 automated test cases** covering:
-# Positive:
+## Positive:
 1) A newly registered user can login
 2) Existing user can login
 3) User can login even after putting white space after username and password
 4) User can view login credentials by entering correct personal info
 
- # Negative:
+ ## Negative:
  1) User cannot login when wrong username and password are entered
  2) User cannot login when wrong username is entered
  3) User cannot login when wrong password is entered
@@ -22,9 +22,11 @@ It follows the **Page Object Model (POM)** design pattern and includes **10 test
  5) User cannot view username and password when all personal info isn't provided
  6) User cannot view username and password when no personal info is provided
     
-- **Page Object Model (POM)** for clean and maintainable code
-- **Cucumber BDD** for human-readable test scenarios
-- **Single runner** to execute all test cases at once
+  ---
+
+## Design Pattern  
+- **Page Object Model (POM)** is used to structure the project
+- **Cucumber BDD** is used for  more readable test scenarios
 
 ---
 
@@ -32,9 +34,8 @@ It follows the **Page Object Model (POM)** design pattern and includes **10 test
 - **Java**
 - **Selenium WebDriver**
 - **Cucumber**
-- **JUnit/TestNG** (depending on your runner setup)
+- **JUnit**
 - **Maven**
-- **WebDriverManager** (automatic driver setup)
 
 ---
 
@@ -45,4 +46,3 @@ Test can be executed using the Runner file. To run test in headless mode headles
 
 ## Reporting
 Each execution produces a new report under **target** with the name **default-cucumber-reports.html**. When this file is opened in a browser a nicely structured report of the tests results can be viewed. 
-
