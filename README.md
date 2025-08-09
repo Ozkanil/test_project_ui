@@ -46,3 +46,4 @@ Tests can be executed using the Runner file. To run the tests in headless mode h
 
 ## 📊 Reporting
 Each execution produces a new report under **target** with the name **default-cucumber-reports.html**. When this file is opened in a browser a nicely structured report of the test results can be viewed. 
+![Test Report Screenshot](images/report-screenshot.png)
