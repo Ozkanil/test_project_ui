@@ -8,13 +8,13 @@ It follows the **Page Object Model (POM)** design pattern and includes **10 test
 
 ## ✅ Features
 - **10 automated test cases** covering:
-## Positive:
+- Positive:
 1) A newly registered user can login
 2) Existing user can login
 3) User can login even after putting white space after username and password
 4) User can view login credentials by entering correct personal info
 
- ## Negative:
+ - Negative:
  1) User cannot login when wrong username and password are entered
  2) User cannot login when wrong username is entered
  3) User cannot login when wrong password is entered
@@ -40,9 +40,9 @@ It follows the **Page Object Model (POM)** design pattern and includes **10 test
 ---
 
 ## Execution
-Test can be executed using the Runner file. To run test in headless mode headless parameter in configuration properties file needs to be set **true**. 
+Tests can be executed using the Runner file. To run the tests in headless mode headless parameter in configuration properties file needs to be set **true**. 
 
 ---
 
 ## Reporting
-Each execution produces a new report under **target** with the name **default-cucumber-reports.html**. When this file is opened in a browser a nicely structured report of the tests results can be viewed. 
+Each execution produces a new report under **target** with the name **default-cucumber-reports.html**. When this file is opened in a browser a nicely structured report of the test results can be viewed. 
