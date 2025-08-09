@@ -14,6 +14,11 @@ Feature: User login
  # 5) User cannot view username and password when all personal info isn't provided
  # 6) User cannot view username and password when no personal info is provided
 
+  #IMPORTANT NOTE: By the time of the completion of this assignment the second scenario about existing user login is green
+  # but noticed that existing user is failing to login after some time probably because maintainers of this website are
+  # wiping the database. Therefore, if these two tests cases fails valid username and password in the TestData class
+  # can be replaced with the new valid ones to make these tests green.
+
   Scenario: A newly registered user can login
     Given a user open the home page
     And the user makes registration
